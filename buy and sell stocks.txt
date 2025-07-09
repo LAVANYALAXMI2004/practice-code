@@ -1,5 +1,6 @@
-import java.util.*;
 (brute force)
+import java.util.*;
+
 public class Main
 {
 	public static void main(String[] args) {
@@ -19,6 +20,32 @@ public class Main
                 max=Math.max(profit,max);
                 
             }
+        }
+        System.out.print(max);
+		 
+	}
+}
+
+(optimized)
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=s.nextInt();
+        }
+        int max=0;
+        int profit=0;
+        int min=a[0];
+        for(int i=0;i<n;i++){
+            if(min>a[i]){
+                min=a[i];
+            }
+            max=Math.max(max,a[i]-min);
         }
         System.out.print(max);
 		 
