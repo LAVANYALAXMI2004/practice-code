@@ -1,0 +1,20 @@
+Example 1:
+Input: s=”this is an amazing program”
+Output: “program amazing an is this”
+
+Example 2:
+Input: s=”This is decent”
+Output: “decent is This”
+solution:
+class Solution {
+    public String reverseWords(String s) {
+        String a[]=s.trim().split("\\s+");
+        StringBuilder st=new StringBuilder();
+        for(int i=a.length-1;i>=0;i--){
+            st.append(a[i]);
+           if(i!=0)st.append(" ");
+        } 
+             
+       return st.toString(); 
+    }
+}

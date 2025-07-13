@@ -1,6 +1,9 @@
 (brute force)
 import java.util.*;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8d90d033c849476625199b5b4366c4daa4c13be0
 public class Main
 {
 	public static void main(String[] args) {
@@ -25,6 +28,7 @@ public class Main
 		 
 	}
 }
+<<<<<<< HEAD
 
 (optimized)
 import java.util.*;
@@ -51,3 +55,5 @@ public class Main
 		 
 	}
 }
+=======
+>>>>>>> 8d90d033c849476625199b5b4366c4daa4c13be0
